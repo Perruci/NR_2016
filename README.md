@@ -1,2 +1,5 @@
-# NR_2016
-Repository destined to retain the laboratory activities of Network Robotics class, UnB_1/2_2016. 
+# Robótica em Rede
+
+### Class of Robotica em Rede, UnB, Universidade de Brasília, 2016;
+### prof. Alberto J. Alvares;
+### Author: Pedro Henrique Suruagy Perruci;
