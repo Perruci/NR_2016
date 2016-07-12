@@ -1,7 +1,7 @@
 # Exercicio 1
 
-### Disciplina Robotica em Rede, UnB 2016
-### Realizado conforme as intrucoes do prof. Alberto J. Alvares
+### Class of Robotica em Rede, UnB 2016
+### prof. Alberto J. Alvares
 ### Author: Pedro Henrique Suruagy Perruci
 
 ## Objectives
