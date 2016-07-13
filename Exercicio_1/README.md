@@ -2,7 +2,7 @@
 
 ### Class of Robotica em Rede, UnB 2016
 ### prof. Alberto J. Alvares
-### Author: Pedro Henrique Suruagy Perruci
+### Author: Pedro Henrique Suruagy Perruci --- 14/0158596
 
 ## Objectives
 
