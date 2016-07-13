@@ -16,9 +16,9 @@
 
 2.0 - Basic Simulation
 
-	rosrun uwsim uwsim - -configfile pipeFollowing_basic.xml
-	rosrun uwsim uwsim - -configfile pipeFollowing_turns.xml
-	rosrun uwsim uwsim - -configfile pipeFollowing_heights.xml
+	rosrun uwsim uwsim --configfile pipeFollowing_basic.xml
+	rosrun uwsim uwsim --configfile pipeFollowing_turns.xml
+	rosrun uwsim uwsim --configfile pipeFollowing_heights.xml
 
 2.1 - Lauch Simulation
 
