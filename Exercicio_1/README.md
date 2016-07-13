@@ -1,9 +1,5 @@
 # Exercicio 1
 
-### Class of Robotica em Rede, UnB 2016
-### prof. Raul Marin
-### Author: Pedro Henrique Suruagy Perruci
-
 ## Objectives
 
 This folder contains the python file utilized to command a aquatic robot in a simulated environment.
@@ -54,3 +50,7 @@ It's notable that human interaction is an unstable solution when trying to accom
 
 On future projects, we shall use the functions studyied here to implement an autonomous way for the robot to navigate through the Pipes.
 It's expected that this approach reports way smaller amounts of error, as we may use the robot's sensors to guide it's path.
+
+### Class of Robotica em Rede, UnB 2016
+### prof. Raul Marin
+### Author: Pedro Henrique Suruagy Perruci
