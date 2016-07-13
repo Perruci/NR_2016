@@ -1,7 +1,7 @@
 # Exercicio 1
 
 ### Class of Robotica em Rede, UnB 2016
-### prof. Alberto J. Alvares
+### prof. Raul Marin
 ### Author: Pedro Henrique Suruagy Perruci
 
 ## Objectives
