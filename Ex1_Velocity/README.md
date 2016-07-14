@@ -1,7 +1,5 @@
 # Exercicio 1
 
-## Objectives
-
 This folder contains the python file utilized to command a aquatic robot in a simulated environment.
 On this initial exercise, our main goal was to understand and apply how to move the robotic device in different scenarios.
 Through the user cammands, the robot should be able to follow the pipes present on the scene.
