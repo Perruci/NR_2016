@@ -9,7 +9,7 @@ from std_srvs.srv import Empty
 
 #topic to command
 thrusters_topic = "/g500/thrusters_input"
-#base velocity for the teleoperation (0.5 m/s) / (0.5rad/s)
+#base aceleration induceb by the motors (0 - 1 )
 baseBoost = 0.5
 
 #Console input variables to teleop it from the console
@@ -36,8 +36,8 @@ stop=rospy.ServiceProxy('/stopBench', Empty)
 #The try is necessary for the console input!
 try:
     while not rospy.is_shutdown():
-    	Dynamics = [0,0,0,0,0]	
-    	msg = Float64MultiArray()
+	Dynamics = [0,0,0,0,0]	
+    	msg = Float64MultiArray()	
         try:
             c = sys.stdin.read(1)
 	    ## Set Benchmarking
@@ -48,23 +48,23 @@ try:
 		stop()
 		print "Benchmark finished!"	  
             
-	    ## Depending on the character set the proper speeds
+	    ## Depending on the character activate propulsors 
 	    ## Linear Acelerations 
-	    ### w_s x-axis
+	    ### w_s x-axis --- Dynamics[0-1]
 	    elif c=='w':  
 		Dynamics[0] = Dynamics[1] = -baseBoost
 	    elif c=='s':
 		Dynamics[0] = Dynamics[1] = baseBoost
-	    ### a_d y-axis
-	    elif c=='a':	
-		Dynamics[2] = Dynamics[3] = baseBoost
+	    ### q_e y-axis --- Dynamics[4]
 	    elif c=='d':	
-		Dynamics[2] = Dynamics[3] = -baseBoost
-	    ### q_e z-axis
-	    elif c=='q':	
 		Dynamics[4] = baseBoost
-	    elif c=='e':	
+	    elif c=='a':	
 		Dynamics[4] = -baseBoost
+	    ### a_d z-axis --- Dynamics[2-3]
+	    elif c=='q':	
+		Dynamics[2] = Dynamics[3] = baseBoost
+	    elif c=='e':	
+		Dynamics[2] = Dynamics[3] = -baseBoost
 	    
 	    else:
 		print 'wrong key pressed'
